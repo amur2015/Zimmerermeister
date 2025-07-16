@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kontaktieren Sie Ihren Zimmerermeister für Projekte in Holzbauweise">
+    <title>Kontakt - Zimmerei Böff</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Startseite</a></li>
+            <li><a href="galerie.html">Galerie</a></li>
+            <li><a href="kontakt.html">Kontaktformular</a></li>
+            <li><a href="impressum.html">Impressum</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <header>
+            <h1>Jetzt kontaktieren</h1>
+        </header>
+        <main>
+            <p>Füllen Sie das Formular aus oder rufen Sie mich an! Ich melde mich so schnell wie möglich bei Ihnen.</p>
+            <div class="phone-contact">
+                <img src="Buttons/button_phone-call.png" alt="Telefon" class="phone-icon"> Oder rufen Sie mich direkt an: <a href="tel:+4960619685346">06061 9685346</a>
+            </div>
+            
+            <!-- WICHTIG: Ersetzen Sie "YOUR_REAL_UNIQUE_ID" mit Ihrer echten Formspree Formular-ID, damit das Formular funktioniert. -->
+            <!-- HINWEIS: Das Formular funktioniert erst, wenn Sie die Platzhalter-URL unten durch Ihre echte Formspree-ID ersetzen. -->
+            <form class="contact-form" action="https://formspree.io/f/YOUR_REAL_UNIQUE_ID" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Ihre E-Mail-Adresse:</label>
+                <input type="email" id="email" name="_replyto" required>
+                
+                <label for="message">Ihre Nachricht:</label>
+                <textarea id="message" name="message" rows="6" required></textarea>
+                
+                <button type="submit">Nachricht senden</button>
+            </form>
+        </main>
+        <footer>
+            <address>
+                Zimmerermeister Gerald Böff<br>
+                Hohlweg 10<br>
+                64720 Michelstadt
+            </address>
+            Telefon: <a href="tel:+4960619685346">06061 9685346</a><br>
+            E-Mail: <a href='mailto:geraldboeff@web.de'>geraldboeff@web.de</a><br>
+            <p>&copy; 2024 Zimmerermeister Gerald Böff. Alle Rechte vorbehalten.</p>
+            <div class="footer-legal-links">
+                <a href="impressum.html">Impressum</a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

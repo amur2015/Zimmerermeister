@@ -1,0 +1,285 @@
+/* General Body Styles */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #ddd; /* Grey background */
+    padding: 1rem 0;
+    border-bottom: 1px solid #ccc;
+    /* Make the navigation bar stick to the top on scroll */
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Ensures it stays on top of other content */
+    width: 100%; /* Ensure it spans the full width */
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+/* Container for the content */
+.container {
+    max-width: 800px;
+    margin: 2rem auto; /* Center the container */
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Header Styles */
+header h1 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+/* Layout for the intro section on the homepage */
+.intro-layout {
+    display: flex;
+    align-items: flex-start; /* Aligns items to the top */
+    gap: 2rem;
+}
+
+.profile-image {
+    max-width: 200px;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.main-text {
+    flex: 1; /* Allows the text block to fill the remaining space */
+}
+
+.main-text p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    text-align: left;
+}
+
+/* Footer Styles */
+footer {
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid #eaeaea;
+    font-size: 0.9rem;
+    color: #777;
+    text-align: center;
+}
+
+/* Footer Address */
+footer address {
+    font-style: normal;
+    margin-bottom: 1rem;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #000; /* Black font color */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #c0c0c0; /* A slightly darker grey for better hover feedback */
+}
+
+/* Swiper Carousel Styles */
+.swiper-container {
+    width: 100%;
+    margin-top: 2rem;
+    border-radius: 8px;
+    overflow: hidden; /* Important for rounded corners on slides */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.swiper-slide {
+    text-align: center;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.swiper-caption {
+    padding: 1rem;
+    font-size: 1rem;
+    color: #555;
+    width: 100%;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 600px) {
+    .container {
+        margin: 1rem;
+        padding: 1rem;
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .intro-layout {
+        flex-direction: column;
+        align-items: center; /* Center the image and text block on mobile */
+    }
+}
+
+/* Contact Form Styles */
+.contact-form {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.contact-form label {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 0.8rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-family: inherit;
+    width: 100%;
+    box-sizing: border-box; /* Ensures padding doesn't affect width */
+}
+
+.contact-form button {
+    padding: 1rem;
+    background-color: #2c3e50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    align-self: flex-start; /* Align button to the left */
+}
+
+.contact-form button:hover {
+    background-color: #34495e;
+}
+
+/* Style Swiper navigation arrows and pagination */
+.swiper-button-next,
+.swiper-button-prev {
+    /* Custom modern styles for arrows */
+    background-color: rgba(44, 62, 80, 0.7); /* Semi-transparent background matching heading color */
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    color: #ffffff; /* White arrow icon */
+    transition: background-color 0.3s ease;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+    background-color: rgba(44, 62, 80, 1); /* Solid background on hover */
+}
+
+/* Adjust the size of the arrow icon inside the button */
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    font-size: 18px;
+}
+
+.swiper-pagination-bullet-active {
+    background: #2c3e50; /* Match heading color */
+}
+
+/* === Phone Contact Link === */
+.phone-contact {
+    text-align: center;
+    margin: 30px 0;
+    font-size: 1.1rem;
+}
+
+.phone-icon {
+    width: 16px; /* Adjust size as needed */
+    height: 16px; /* Adjust size as needed */
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+.phone-contact a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.phone-contact a:hover {
+    text-decoration: underline;
+}
+
+/* === Footer Attribution === */
+.attribution {
+    margin-top: 1rem;
+    font-size: 0.8rem; /* Make it a bit smaller than the rest of the footer text */
+}
+
+.attribution a {
+    color: inherit; /* Inherit the #777 color from the footer */
+    text-decoration: none;
+}
+
+.attribution a:hover {
+    text-decoration: underline;
+}
+
+/* === Footer Legal Links === */
+.footer-legal-links {
+    margin-top: 1rem;
+}
+
+.footer-legal-links a {
+    color: inherit;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 0.8rem;
+}
+
+.footer-legal-links a:hover {
+    text-decoration: underline;
+}
